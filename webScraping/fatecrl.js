@@ -15,7 +15,7 @@ function pegarCodigos(){
     var cortar = 0;
     var divCortada = "";
     for(let i = 0; i < divs.length; i++){
-        cortar = divs[i].innerHTML.indexOf('/') + 11;
+        cortar = divs[i].innerHTML.indexOf('</strong>') + 12;
         divCortada = divs[i].innerHTML.slice(cortar, cortar + 7);
         codigos.push(divCortada);
     }
